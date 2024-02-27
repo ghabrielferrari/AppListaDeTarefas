@@ -28,7 +28,7 @@ class TarefaAdapter(
         }
 
         fun bind( tarefa: Tarefa ){
-            binding.textDescricao.text = tarefa.descricao
+            binding.checkboxDescricao.text = tarefa.descricao
             binding.textData.text = tarefa.dataCadastro
 
             binding.btnExcluir.setOnClickListener {

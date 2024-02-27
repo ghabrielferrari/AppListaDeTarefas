@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        //inicializarToolbar()
+        inicializarToolbar()
 
         binding.fabAdicionar.setOnClickListener {
             val intent = Intent(this, AdicionarTarefaActivity::class.java)
@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun inicializarToolbar() {
-        //val toolbar = binding.includeMainToolbar.tbPrincipal
-        //setSupportActionBar(toolbar)
+        val toolbar = binding.includeMainToolbar.tbPrincipal
+        setSupportActionBar(toolbar)
         supportActionBar?.apply {
             title = "Lista de Tarefas"
         }
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         addMenuProvider(
             object : MenuProvider {
                 override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                    menuInflater.inflate(R.menu.menu, menu)
+                    menuInflater.inflate(R.menu.menu_principal, menu)
                 }
 
                 override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
