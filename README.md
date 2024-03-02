@@ -16,7 +16,7 @@ Este projeto é um Aplicativo de Lista de Tarefas, desenvolvido utilizando Kotli
 
 ✅ SDK: Android SDK
 
-✅ Bibliotecas Principais: Firebase para autenticação e armazenamento de dados, Picasso para carregamento de imagens.
+✅ Bibliotecas Principais: Firebase para autenticação e armazenamento de dados.
 
 🕕 COMO INSTALAR E EXECUTAR
 
